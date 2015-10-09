@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SafetyNet Playground</string>
+
+    <string name="instructions">This sample app will attempt to make a request to a web service.
+        The request will succeed only if SafetyNet attests that the device is CTS compatible.
+    </string>
+    <string name="visit_us_text">https://www.cigital.com/</string>
+    <string name="menuBlogPost">Go to blog post</string>
+    <string name="urlBlogPost">https://www.cigital.com/blog/using-safetynet-api</string>
+    <string name="menuCodeApp">Go to app code</string>
+    <string name="urlCodeApp">https://github.com/cigital/safetynet-app</string>
+    <string name="menuCodeWeb">Go to web service code</string>
+    <string name="urlCodeWeb">https://github.com/cigital/safetynet-web-php</string>
+    <string name="actionPopup">More info</string>
+    <string name="actionPopupText">This application demonstrates how developers can use SafetyNet, part of Google Play Services, in order to understand the CTS compatibility status of the device.\r\n\r\nFor more information please visit https://www.cigital.com/blog/using-safetynet-api</string>
+</resources>

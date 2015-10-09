@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/tvInstructions"
+            android:layout_alignLeft="@+id/tvInstructions"
+            android:foregroundGravity="center_horizontal"
+            android:src="@drawable/cigital_logo"
+            android:layout_marginBottom="10sp"/>
+
+        <TextView
+            android:id="@+id/tvInstructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:layout_margin="5dp"
+            android:text="@string/instructions"
+            android:layout_marginBottom="10sp"/>
+
+        <Button
+            android:id="@+id/btnSubmitRequest"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/tvInstructions"
+            android:onClick="onBtnSubmitRequestClick"
+            android:text="QUERY THE API"
+            android:layout_marginBottom="10sp"/>
+
+        <TextView
+            android:id="@+id/tvProgressComment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/btnSubmitRequest"
+            android:gravity="center"
+            android:text="Press the button to begin..."
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvProgressComment"
+            android:indeterminate="false"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivResponse"
+            android:layout_below="@id/progressBar"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:id="@+id/tvResponse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_alignTop="@+id/ivResponse"
+            android:layout_toEndOf="@+id/ivResponse"
+            android:layout_toRightOf="@+id/ivResponse"
+            android:textSize="18sp"
+            android:layout_marginBottom="10sp"
+            android:layout_marginLeft="5sp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/tableLayout">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/bottom_height"
+                    android:background="#e37826"
+                    android:layout_weight="0.125"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/bottom_height"
+                    android:background="#fdce08"
+                    android:layout_weight="0.125"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/bottom_height"
+                    android:background="#295eac"
+                    android:layout_weight="0.125"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/bottom_height"
+                    android:background="#4bc9f4"
+                    android:layout_weight="0.125"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/bottom_height"
+                    android:background="#8ec741"
+                    android:layout_weight="0.125"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/bottom_height"
+                    android:background="#51813b"
+                    android:layout_weight="0.125"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/bottom_height"
+                    android:background="#4a4a4a"
+                    android:layout_weight="0.125"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/bottom_height"
+                    android:background="#818285"
+                    android:layout_weight="0.125"/>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/visit_us_text"
+            android:id="@+id/tvVisitUs"
+            android:layout_above="@+id/tableLayout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_horizontal"
+            android:textColor="#295eac"
+            android:onClick="onClickVisitUs"
+            android:layout_marginBottom="5dp"/>
+
+</RelativeLayout>
